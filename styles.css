@@ -1,0 +1,79 @@
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  font-family: 'Noto Serif TC', 'PingFang TC', '微軟正黑體', serif;
+  background: #efefef;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+h1 {
+  font-weight: 600;
+  color: #6b4f4f;
+  letter-spacing: 2px;
+  font-size: 2.2rem;
+  margin-bottom: 0.5em;
+}
+
+input[type="text"] {
+  padding: 10px 16px;
+  border-radius: 8px;
+  border: 1px solid #e0bfb8;
+  font-size: 1.2rem;
+  font-family: inherit;
+  outline: none;
+  width: 220px;
+  background: #fffaf9;
+  color: #6b4f4f;
+}
+
+button {
+  padding: 10px 28px;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(90deg, #e6dada 0%, #f5e6e8 100%);
+  color: #6b4f4f;
+  font-size: 1.1rem;
+  font-family: inherit;
+  cursor: pointer;
+  transition: background 0.2s;
+  box-shadow: 0 2px 8px #f5e6e880;
+}
+button:hover {
+  background: linear-gradient(90deg, #f5e6e8 0%, #e6dada 100%);
+}
+
+.canvas-wrapper {
+  margin-top: 18px;
+  border-radius: 24px;
+  box-shadow: 0 6px 24px #f7cac980;
+  overflow: hidden;
+  background: #fff;
+}
+
+#quoteCanvas {
+  display: block;
+  border-radius: 24px;
+  background: linear-gradient(135deg, #f7cac9 0%, #f9e7e7 100%);
+  width: 360px;
+  height: 360px;
+  max-width: 80vw;
+  max-height: 80vw;
+}
+
+#downloadLink {
+  margin-top: 12px;
+  color: #6b4f4f;
+  font-size: 1rem;
+  text-decoration: underline;
+  cursor: pointer;
+}
